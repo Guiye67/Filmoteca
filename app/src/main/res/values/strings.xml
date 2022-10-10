@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Filmoteca</string>
+    <string name="titulo">FILMOTECA</string>
+    <string name="texto_icono">Icono Kotlin</string>
+    <string name="texto1">Soy Guillermo Baeza, alumno de 2º DAW</string>
+    <string name="texto2">Esta aplicación no hace nada (de momento)</string>
 </resources>

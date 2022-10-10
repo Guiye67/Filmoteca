@@ -7,12 +7,67 @@
     tools:context=".AboutActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/titulo"
+        android:layout_width="273dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="480dp"
+        android:fontFamily="@font/david_libre"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/icono" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="182dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="115dp"
+        android:background="@color/white"
+        android:contentDescription="@string/texto_icono"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_kotlin"
+        tools:srcCompat="@drawable/icono_kotlin" />
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="244dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/texto1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="252dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="206dp"
+        android:text="@string/texto2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
